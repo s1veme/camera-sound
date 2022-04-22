@@ -1,0 +1,17 @@
+.idea/
+.vscode/
+pyrightconfig.json
+
+.env
+env
+.venv
+venv
+.venv-vscode
+
+__pycache__
+
+*.log
+*.flag
+*.sql
+
+src/static/
