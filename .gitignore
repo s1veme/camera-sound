@@ -15,3 +15,5 @@ __pycache__
 *.sql
 
 src/static/
+
+*.sqlite3
