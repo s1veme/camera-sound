@@ -15,5 +15,6 @@ __pycache__
 *.sql
 
 src/static/
+src/media/videos/
 
 *.sqlite3
