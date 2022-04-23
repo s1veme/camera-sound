@@ -4,7 +4,6 @@ on:
   push:
     branches:
      - master
-     - backend/ci-cd
 
 jobs:
   build:
