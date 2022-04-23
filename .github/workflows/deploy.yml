@@ -3,7 +3,8 @@ name: Test and Deploy
 on:
   push:
     branches:
-     - main
+     - master
+     - backend/ci-cd
 
 jobs:
   build:
