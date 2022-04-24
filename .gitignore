@@ -16,5 +16,7 @@ __pycache__
 
 src/static/
 src/media/videos/
+src/media/reports/
+src/media/temp-reports/
 
 *.sqlite3

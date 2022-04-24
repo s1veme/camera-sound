@@ -14,7 +14,8 @@ class JobReport(models.Model):
     camera = models.ForeignKey(Camera, verbose_name='Камера', on_delete=models.CASCADE)
 
     statistics = models.TextField('Статистика', blank=True, null=True)
-    video = models.FileField("Видео", upload_to='videos/%Y/%m/%d/', validators=[validate_file_extension])
+    video = models.FileField('Видео', upload_to='videos/%Y/%m/%d/', validators=[validate_file_extension])
+    report_xlsx = models.FileField('Отчёт в формате xlsx', upload_to='reports/%Y/%m/%d/', blank=True, null=True)
 
     created_at = models.DateField(
         auto_now_add=True

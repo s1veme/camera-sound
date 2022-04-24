@@ -8,7 +8,7 @@ class JobReportSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = JobReport
-        fields = ['id', 'camera', 'camera_title', 'statistics', 'video', 'created_at']
+        fields = ['id', 'camera', 'camera_title', 'statistics', 'video', 'report_xlsx', 'created_at']
 
 
 class CameraSerializer(serializers.ModelSerializer):
