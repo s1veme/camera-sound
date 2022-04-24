@@ -9,6 +9,7 @@ from camera.api.serializers import (
     JobReportSerializer
 )
 from camera.api.parsers import MultipartJsonParser
+from camera.api.filters import JobReportFilter
 
 from camera.service import convert_camera_parameters, create_many_test_parameters
 from camera.models import Camera, JobReport
@@ -52,3 +53,5 @@ class CameraModelViewSet(ModelViewSet):
 class JobReportModelViewSet(ModelViewSet):
     queryset = JobReport.objects.all()
     serializer_class = JobReportSerializer
+
+    filterset_class = JobReportFilter
