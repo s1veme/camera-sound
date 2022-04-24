@@ -7,7 +7,7 @@ def convert_camera_parameters(data):
 
 
 def create_many_test_parameters(string, limit=50):
+    new_string = ''
     for _ in range(limit+1):
-        string += f'{string}\n'
-
-    return string
+        new_string += f'{string}\n'
+    return new_string
