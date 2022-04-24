@@ -4,9 +4,11 @@ from camera.models import Camera, JobReport
 
 
 class JobReportSerializer(serializers.ModelSerializer):
+    camera_title = serializers.CharField(source='camera.title', read_only=True)
+
     class Meta:
         model = JobReport
-        fields = ['id', 'camera', 'statistics', 'video', 'created_at']
+        fields = ['id', 'camera', 'camera_title', 'statistics', 'video', 'created_at']
 
 
 class CameraSerializer(serializers.ModelSerializer):
