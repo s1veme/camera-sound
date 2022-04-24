@@ -53,6 +53,5 @@ class CameraModelViewSet(ModelViewSet):
 class JobReportModelViewSet(ModelViewSet):
     queryset = JobReport.objects.all()
     serializer_class = JobReportSerializer
-    
-    filterset_class = JobReportFilter
 
+    filterset_class = JobReportFilter
